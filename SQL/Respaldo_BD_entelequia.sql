@@ -5,7 +5,7 @@
 -- Dumped from database version 16.3
 -- Dumped by pg_dump version 16.3
 
--- Started on 2024-08-12 21:57:06
+-- Started on 2024-08-16 18:45:08
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -734,6 +734,16 @@ ALTER TABLE ONLY public.proveedores ALTER COLUMN id_proveedor SET DEFAULT nextva
 --
 
 COPY public.categorias (id_categoria, nombre_categoria, descripcion) FROM stdin;
+1	Camisetas	Camisetas de diferentes estilos y materiales para hombres, mujeres y niños.
+2	Pantalones	Pantalones casuales, formales, jeans y más para todas las edades.
+3	Vestidos	Vestidos de moda para diferentes ocasiones y temporadas.
+4	Abrigos y Chaquetas	Abrigos, chaquetas y prendas de abrigo para el invierno y entretiempo.
+5	Ropa Interior	Ropa interior cómoda y elegante para hombres y mujeres.
+6	Zapatos	Calzado de moda, deportivo y casual para toda la familia.
+7	Accesorios	Bolsos, cinturones, sombreros, bufandas y otros complementos.
+8	Deportes	Ropa deportiva para fitness, yoga, correr y otras actividades.
+9	Ropa de Baño	Bañadores, bikinis y accesorios para la playa o piscina.
+10	Ropa de Dormir	Pijamas, batas y ropa de dormir para todas las estaciones.
 \.
 
 
@@ -744,6 +754,16 @@ COPY public.categorias (id_categoria, nombre_categoria, descripcion) FROM stdin;
 --
 
 COPY public.clientes (id_cliente, nombre, apellidos, email, telefono, direccion, ciudad, pais, codigo_postal, fecha_registro) FROM stdin;
+1	Carlos	Gómez	carlos.gomez@example.com	+34123456789	Calle Falsa 123	Madrid	España	28013	2023-07-01 10:15:00
+2	María	López	maria.lopez@example.com	+34987654321	Avenida Siempre Viva 456	Barcelona	España	08002	2023-07-02 11:30:00
+3	Juan	Martínez	juan.martinez@example.com	+34111222333	Calle Mayor 789	Valencia	España	46001	2023-07-03 12:45:00
+4	Lucía	Fernández	lucia.fernandez@example.com	+34998877665	Calle del Pez 321	Sevilla	España	41003	2023-07-04 14:00:00
+5	Andrés	Rodríguez	andres.rodriguez@example.com	+34123456789	Calle Luna 654	Bilbao	España	48005	2023-07-05 15:15:00
+6	Elena	García	elena.garcia@example.com	+34911223344	Plaza Sol 987	Málaga	España	29015	2023-07-06 16:30:00
+7	David	Pérez	david.perez@example.com	+34988776655	Avenida Mar 111	Zaragoza	España	50004	2023-07-07 17:45:00
+8	Ana	Sánchez	ana.sanchez@example.com	+34123456789	Calle del Rio 222	Granada	España	18001	2023-07-08 18:00:00
+9	Pedro	Ruiz	pedro.ruiz@example.com	+34999887766	Calle Limon 333	Murcia	España	30003	2023-07-09 19:15:00
+10	Isabel	Hernández	isabel.hernandez@example.com	+34111222333	Paseo Marítimo 444	Cádiz	España	11001	2023-07-10 20:30:00
 \.
 
 
@@ -754,6 +774,20 @@ COPY public.clientes (id_cliente, nombre, apellidos, email, telefono, direccion,
 --
 
 COPY public.detalles_pedido (id_detalle, id_pedido, id_producto, cantidad, precio_unitario) FROM stdin;
+1	1	1	2	15.99
+2	1	2	1	49.99
+3	2	3	1	39.99
+4	2	6	1	60.00
+5	3	4	1	120.00
+6	4	5	3	25.50
+7	4	7	2	20.00
+8	5	8	2	30.00
+9	6	9	1	35.00
+10	7	10	3	29.99
+11	8	1	1	15.99
+12	9	3	1	39.99
+13	10	4	1	120.00
+14	10	2	2	49.99
 \.
 
 
@@ -764,6 +798,16 @@ COPY public.detalles_pedido (id_detalle, id_pedido, id_producto, cantidad, preci
 --
 
 COPY public.devoluciones (id_devolucion, id_pedido, id_producto, cantidad, fecha_devolucion, motivo) FROM stdin;
+1	1	1	1	2023-07-05 10:00:00	Talla incorrecta
+2	2	6	1	2023-07-07 11:30:00	Producto dañado
+3	3	4	1	2023-07-08 12:45:00	No cumple con las expectativas
+4	4	5	2	2023-07-10 14:15:00	Material no era el esperado
+5	5	8	1	2023-07-12 15:00:00	Producto diferente al pedido
+6	6	9	1	2023-07-13 16:30:00	Error en el color
+7	7	10	1	2023-07-14 17:00:00	Cambio de decisión del cliente
+8	8	1	1	2023-07-15 18:45:00	Talla incorrecta
+9	9	3	1	2023-07-16 19:00:00	Defecto en la costura
+10	10	4	1	2023-07-17 20:30:00	No es lo que esperaba
 \.
 
 
@@ -774,6 +818,11 @@ COPY public.devoluciones (id_devolucion, id_pedido, id_producto, cantidad, fecha
 --
 
 COPY public.empleados (id_empleado, nombre, apellidos, email, telefono, direccion, ciudad, pais, codigo_postal, puesto, salario, fecha_contratacion) FROM stdin;
+1	Laura	Martínez	laura.martinez@example.com	+34911223344	Calle Primavera 123	Madrid	España	28015	Gerente de Ventas	3500.00	2022-01-15
+2	Pablo	Hernández	pablo.hernandez@example.com	+34988776655	Avenida del Sol 456	Barcelona	España	08001	Asistente de Ventas	2200.00	2022-03-01
+3	Sofía	Ramírez	sofia.ramirez@example.com	+34123456789	Calle Luna 789	Valencia	España	46002	Especialista en Logística	2800.00	2021-07-10
+4	Miguel	García	miguel.garcia@example.com	+34111222333	Calle del Río 321	Sevilla	España	41003	Gerente de Almacén	3000.00	2020-05-20
+5	Elena	Sánchez	elena.sanchez@example.com	+34999887766	Plaza del Mar 654	Bilbao	España	48005	Especialista en Marketing	3200.00	2021-09-15
 \.
 
 
@@ -784,6 +833,16 @@ COPY public.empleados (id_empleado, nombre, apellidos, email, telefono, direccio
 --
 
 COPY public.inventario (id_inventario, id_producto, cantidad_disponible, cantidad_reservada, ubicacion) FROM stdin;
+1	1	100	10	Almacén A - Estante 1
+2	2	50	5	Almacén B - Estante 3
+3	3	30	8	Almacén C - Estante 2
+4	4	20	2	Almacén A - Estante 4
+5	5	75	15	Almacén B - Estante 5
+6	6	40	12	Almacén C - Estante 6
+7	7	60	10	Almacén A - Estante 7
+8	8	80	20	Almacén B - Estante 8
+9	9	25	5	Almacén C - Estante 9
+10	10	90	25	Almacén A - Estante 10
 \.
 
 
@@ -794,6 +853,16 @@ COPY public.inventario (id_inventario, id_producto, cantidad_disponible, cantida
 --
 
 COPY public.pagos (id_pago, id_pedido, fecha_pago, monto, metodo_pago) FROM stdin;
+1	1	2023-07-01 12:30:00	150.50	Tarjeta de Crédito
+2	2	2023-07-02 14:00:00	85.75	PayPal
+3	3	2023-07-03 15:45:00	120.00	Transferencia Bancaria
+4	4	2023-07-04 16:30:00	200.00	Tarjeta de Crédito
+5	5	2023-07-05 17:00:00	99.99	Tarjeta de Débito
+6	6	2023-07-06 18:15:00	175.25	PayPal
+7	7	2023-07-07 19:00:00	110.00	Transferencia Bancaria
+8	8	2023-07-08 20:30:00	89.50	Tarjeta de Crédito
+9	9	2023-07-09 21:00:00	134.80	Tarjeta de Débito
+10	10	2023-07-10 22:15:00	160.00	PayPal
 \.
 
 
@@ -804,6 +873,16 @@ COPY public.pagos (id_pago, id_pedido, fecha_pago, monto, metodo_pago) FROM stdi
 --
 
 COPY public.pedidos (id_pedido, id_cliente, id_empleado, fecha_pedido, estado, total) FROM stdin;
+1	1	2	2023-07-01 12:00:00	Completado	150.50
+2	2	3	2023-07-02 13:15:00	En Proceso	85.75
+3	3	1	2023-07-03 14:30:00	Cancelado	120.00
+4	4	2	2023-07-04 15:45:00	Completado	200.00
+5	5	4	2023-07-05 16:00:00	Enviado	99.99
+6	6	5	2023-07-06 17:15:00	Completado	175.25
+7	7	1	2023-07-07 18:30:00	En Proceso	110.00
+8	8	3	2023-07-08 19:45:00	Enviado	89.50
+9	9	2	2023-07-09 20:00:00	Completado	134.80
+10	10	4	2023-07-10 21:15:00	Cancelado	160.00
 \.
 
 
@@ -814,6 +893,16 @@ COPY public.pedidos (id_pedido, id_cliente, id_empleado, fecha_pedido, estado, t
 --
 
 COPY public.productos (id_producto, nombre_producto, descripcion, precio, stock, id_categoria, fecha_agregado) FROM stdin;
+1	Camiseta Básica	Camiseta de algodón en varios colores.	15.99	100	1	2023-06-01 10:00:00
+2	Jeans Clásicos	Jeans de corte recto y color azul oscuro.	49.99	50	2	2023-06-05 11:15:00
+3	Vestido Floral	Vestido con estampado floral para primavera.	39.99	30	3	2023-06-10 12:30:00
+4	Chaqueta de Cuero	Chaqueta de cuero genuino de alta calidad.	120.00	20	4	2023-06-15 13:45:00
+5	Ropa Interior de Algodón	Set de ropa interior suave y cómoda.	25.50	75	5	2023-06-20 14:00:00
+6	Zapatillas Deportivas	Zapatillas ligeras para correr y entrenamiento.	60.00	40	6	2023-06-25 15:15:00
+7	Bufanda de Lana	Bufanda cálida de lana para el invierno.	20.00	60	7	2023-07-01 16:30:00
+8	Leggings Deportivos	Leggings elásticos para actividades deportivas.	30.00	80	8	2023-07-05 17:45:00
+9	Bañador Clásico	Bañador de una pieza con diseño clásico.	35.00	25	9	2023-07-10 18:00:00
+10	Pijama de Algodón	Pijama suave y cómoda para todas las estaciones.	29.99	90	10	2023-07-15 19:15:00
 \.
 
 
@@ -824,6 +913,16 @@ COPY public.productos (id_producto, nombre_producto, descripcion, precio, stock,
 --
 
 COPY public.productos_proveedores (id_producto, id_proveedor) FROM stdin;
+1	1
+2	2
+3	4
+4	9
+5	7
+6	5
+7	6
+8	5
+9	8
+10	10
 \.
 
 
@@ -834,6 +933,16 @@ COPY public.productos_proveedores (id_producto, id_proveedor) FROM stdin;
 --
 
 COPY public.proveedores (id_proveedor, nombre_proveedor, contacto, telefono, direccion, ciudad, pais, codigo_postal, email) FROM stdin;
+1	Textiles S.A.	Carlos Martínez	+34911223355	Calle de los Textiles 45	Madrid	España	28010	contacto@textiles-sa.es
+2	Ropa y Más	Ana Gómez	+34999887766	Avenida de la Moda 87	Barcelona	España	08002	info@ropaymas.com
+3	Calzado Total	Luis Fernández	+34987654321	Calle del Calzado 22	Valencia	España	46001	ventas@calzadototal.com
+4	Vestidos y Accesorios	María López	+34911223344	Plaza del Vestido 10	Sevilla	España	41005	maria@vestidosyaccesorios.com
+5	Deportes Plus	Javier Ruiz	+34933445566	Calle del Deporte 55	Bilbao	España	48004	contacto@deportesplus.es
+6	Bufandas y Más	Elena Rodríguez	+34955667788	Calle de la Bufanda 78	San Sebastián	España	20005	info@bufandasyplus.com
+7	Ropa Interior Premium	Pedro Fernández	+34912233445	Avenida del Interior 33	A Coruña	España	15004	pedro@ropapremium.com
+8	Swimwear International	Laura Sánchez	+34987766554	Calle del Bañador 66	Murcia	España	30003	contacto@swimwearint.com
+9	Chaquetas de Cuero Ltd.	Ricardo Morales	+34998877665	Calle del Cuero 99	Granada	España	18008	ventas@chaquetasdelcuero.com
+10	Lencería Elegante	Sofía González	+34933445577	Plaza de la Lencería 23	Zaragoza	España	50001	sofia@lenceriaelegante.com
 \.
 
 
@@ -1240,7 +1349,7 @@ ALTER DEFAULT PRIVILEGES FOR ROLE cloud_admin IN SCHEMA public GRANT ALL ON SEQU
 ALTER DEFAULT PRIVILEGES FOR ROLE cloud_admin IN SCHEMA public GRANT ALL ON TABLES TO neon_superuser WITH GRANT OPTION;
 
 
--- Completed on 2024-08-12 21:57:28
+-- Completed on 2024-08-16 18:45:22
 
 --
 -- PostgreSQL database dump complete
