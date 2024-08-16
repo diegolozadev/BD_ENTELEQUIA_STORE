@@ -1,3 +1,5 @@
+![image](https://github.com/user-attachments/assets/f19aa5ba-7f1e-4333-968b-f3afece9183e)
+
 # Respaldo de la Base de Datos Entelequia Store
 
 Bienvenido al repositorio de respaldo de la base de datos para **Entelequia Store**, una tienda en línea que ofrece una variedad de productos de moda. Este repositorio incluye un archivo SQL con la estructura completa de la base de datos y datos de ejemplo para poner en marcha tu tienda.
