@@ -73,7 +73,7 @@ Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
 
 ## Contacto
 
-Si tienes alguna pregunta o necesitas más información, no dudes en contactar a [Diego Lozano](mailto:diego@example.com).
+Si tienes alguna pregunta o necesitas más información, no dudes en contactar a [Diego Lozano](mailto:diegolozanodev@gmail.com).
 
 ---
 
