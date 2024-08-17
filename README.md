@@ -30,26 +30,27 @@ Asegúrate de reemplazar <usuario> con tu nombre de usuario de PostgreSQL y <nom
 3. Verificar la Importación
 Utiliza herramientas de administración de PostgreSQL o consultas SQL para verificar que las tablas y los datos se hayan importado correctamente.
 
-📊**Estructura de la Base de Datos**
+### 📊**Estructura de la Base de Datos**
 La base de datos incluye las siguientes tablas:
 
 ![image](https://github.com/user-attachments/assets/49b97ff8-4d9a-4a5d-8091-5775fc102116)
 
-Aquí tienes un pequeño resumen de las tablas:
+### **Aquí tienes un pequeño resumen de las tablas:**
 ![image](https://github.com/user-attachments/assets/f6213e83-0173-4c18-8eff-326682e3bdb4)
 
-🤝 Contribuciones
+### 🤝 Contribuciones
 ¡Queremos tu ayuda! Si deseas contribuir al proyecto:
 
-Fork el repositorio.
-Crea una rama para tus cambios (git checkout -b feature/nueva-funcionalidad).
-Realiza tus cambios y commit (git commit -am 'Añadida nueva funcionalidad').
-Push a tu rama (git push origin feature/nueva-funcionalidad).
-Envía una Pull Request.
-📜 Licencia
+1. **Fork** el repositorio.
+2. **Crea** una rama para tus cambios (git checkout -b feature/nueva-funcionalidad).
+3. **Realiza** tus cambios y commit (git commit -am 'Añadida nueva funcionalidad').
+4. **Push** a tu rama (git push origin feature/nueva-funcionalidad).
+5. **Envía** una Pull Request.
+
+### 📜 Licencia
 Este proyecto está bajo la Licencia MIT. ¡Siéntete libre de usarlo y adaptarlo según tus necesidades!
 
-📫 Contacto
+### 📫 Contacto
 Para consultas o más información, contacta a Diego Lozano.
 
 Gracias por visitar el repositorio de Entelequia Store. ¡Esperamos que este respaldo de la base de datos te sea de gran utilidad en tu proyecto!
