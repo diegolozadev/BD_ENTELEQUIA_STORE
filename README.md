@@ -7,7 +7,7 @@
 ## 🚀 Descripción**BD_ENTELEQUIA_STORE** 
 Es una aplicación de gestión de bases de datos para una tienda en línea. Este proyecto está diseñado para ayudar a gestionar productos, pedidos, clientes y mucho más, con una estructura de base de datos robusta y eficiente.
 
-## 📦 Características-
+## 📦 Características
 **-Gestión de Productos:** Añade, actualiza y elimina productos con facilidad.  
 **-Gestión de Pedidos:** Controla el estado de los pedidos y realiza un seguimiento detallado.  
 **-Gestión de Clientes:** Administra la información de los clientes y su historial de compras.  
