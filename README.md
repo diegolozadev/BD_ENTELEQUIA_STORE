@@ -61,7 +61,7 @@ Este proyecto está bajo la Licencia [MIT](LICENSE).
 
 Si tienes preguntas o necesitas ayuda, no dudes en ponerte en contacto con el autor:
 
--**Nombre:** Diego Lozano
+-**Nombre:** Diego Lozano  
 -**GitHub:** [https://github.com/diegolozadev](https://github.com/diegolozadev)
 
 ¡Gracias por tu interés en **BD_ENTELEQUIA_STORE**! 🚀
