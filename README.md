@@ -27,7 +27,8 @@ Sigue estos pasos para importar el archivo a tu base de datos PostgreSQL:
    psql -U <usuario> -d <nombre_base_datos> -f Respaldo_BD_entelequia_store.sql
 Asegúrate de reemplazar <usuario> con tu nombre de usuario de PostgreSQL y <nombre_base_datos> con el nombre de tu base de datos.
 
-3. Verificar la Importación
+### 3. Verificar la Importación
+
 Utiliza herramientas de administración de PostgreSQL o consultas SQL para verificar que las tablas y los datos se hayan importado correctamente.
 
 ### 📊**Estructura de la Base de Datos**
