@@ -23,7 +23,7 @@ Es una aplicación de gestión de bases de datos para una tienda en línea. Este
 
 Para comenzar a usar **BD_ENTELEQUIA_STORE**, sigue estos pasos:  
 
-1.**Clona el Repositorio:**
+1.**Clona el Repositorio:**  
    git clone https://github.com/diegolozadev/BD_ENTELEQUIA_STORE.git  
    
 2.**Configura la Base de Datos:**   
