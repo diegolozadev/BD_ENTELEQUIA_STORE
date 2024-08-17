@@ -4,7 +4,8 @@
 
 ¡Bienvenido al repositorio **BD_ENTELEQUIA_STORE**!
 
-## 🚀 Descripción**BD_ENTELEQUIA_STORE** 
+## 🚀 Descripción**
+**BD_ENTELEQUIA_STORE** 
 Es una aplicación de gestión de bases de datos para una tienda en línea. Este proyecto está diseñado para ayudar a gestionar productos, pedidos, clientes y mucho más, con una estructura de base de datos robusta y eficiente.
 
 ## 📦 Características
