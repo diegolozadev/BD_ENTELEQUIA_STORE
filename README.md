@@ -75,3 +75,6 @@ Este proyecto está bajo la Licencia MIT. ¡Siéntete libre de usarlo y adaptarl
 Para consultas o más información, contacta a Diego Lozano.
 
 Gracias por visitar el repositorio de Entelequia Store. ¡Esperamos que este respaldo de la base de datos te sea de gran utilidad en tu proyecto!
+
+Este archivo `README.md` está diseñado para ser visualmente atractivo y proporciona una guía clara para entender y utilizar el repositorio. ¡Espero que te guste!
+
