@@ -1,7 +1,5 @@
 ![image](https://github.com/user-attachments/assets/eaa6b40e-fda3-40db-9f04-0d3ffaae09b5)
 
-
-
 ¡Bienvenido a **Entelequia Store**! Este repositorio contiene el respaldo completo de la base de datos para nuestra tienda en línea de moda. Si estás interesado en la gestión de productos, clientes, pedidos y mucho más, ¡has llegado al lugar correcto!
 
 ## 📁 Contenido del Repositorio
@@ -48,18 +46,8 @@ proveedores: Datos de proveedores.
 productos_proveedores: Relación entre productos y proveedores.
 Aquí tienes un pequeño resumen de las tablas:
 
-Tabla	Descripción
-categorias	Categorías de productos
-clientes	Información de los clientes
-empleados	Información de los empleados
-pedidos	Registros de pedidos
-productos	Información de productos
-detalles_pedido	Detalles de productos en pedidos
-devoluciones	Información sobre devoluciones
-inventario	Estado del inventario
-pagos	Registros de pagos
-proveedores	Información de los proveedores
-productos_proveedores	Relación entre productos y proveedores
+![image](https://github.com/user-attachments/assets/f6213e83-0173-4c18-8eff-326682e3bdb4)
+
 🤝 Contribuciones
 ¡Queremos tu ayuda! Si deseas contribuir al proyecto:
 
@@ -75,6 +63,4 @@ Este proyecto está bajo la Licencia MIT. ¡Siéntete libre de usarlo y adaptarl
 Para consultas o más información, contacta a Diego Lozano.
 
 Gracias por visitar el repositorio de Entelequia Store. ¡Esperamos que este respaldo de la base de datos te sea de gran utilidad en tu proyecto!
-
-Este archivo `README.md` está diseñado para ser visualmente atractivo y proporciona una guía clara para entender y utilizar el repositorio. ¡Espero que te guste!
 
