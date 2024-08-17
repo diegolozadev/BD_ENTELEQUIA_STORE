@@ -16,7 +16,7 @@ Es una aplicación de gestión de bases de datos para una tienda en línea. Este
 
 ## 📈 Tecnologías Utilizadas
 **-Lenguaje de Programación:** SQL  
-**-Sistema de Gestión de Bases de Datos (DBMS):** PostgreSQL. 
+**-Sistema de Gestión de Bases de Datos (DBMS):** PostgreSQL.   
 **-Otros:** PgAdmin
 
 ## 🛠 Instalación
