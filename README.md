@@ -33,19 +33,9 @@ Utiliza herramientas de administración de PostgreSQL o consultas SQL para verif
 📊 Estructura de la Base de Datos
 La base de datos incluye las siguientes tablas:
 
-categorias: Categorías de productos.
-clientes: Datos de clientes.
-empleados: Información de empleados.
-pedidos: Registros de pedidos.
-productos: Información de productos.
-detalles_pedido: Detalles de los productos en cada pedido.
-devoluciones: Información sobre devoluciones.
-inventario: Estado del inventario.
-pagos: Registros de pagos.
-proveedores: Datos de proveedores.
-productos_proveedores: Relación entre productos y proveedores.
-Aquí tienes un pequeño resumen de las tablas:
+![image](https://github.com/user-attachments/assets/49b97ff8-4d9a-4a5d-8091-5775fc102116)
 
+Aquí tienes un pequeño resumen de las tablas:
 ![image](https://github.com/user-attachments/assets/f6213e83-0173-4c18-8eff-326682e3bdb4)
 
 🤝 Contribuciones
