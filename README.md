@@ -1,82 +1,77 @@
 ![image](https://github.com/user-attachments/assets/eaa6b40e-fda3-40db-9f04-0d3ffaae09b5)
 
-# Respaldo de la Base de Datos Entelequia Store
 
-Bienvenido al repositorio de respaldo de la base de datos para **Entelequia Store**, una tienda en línea que ofrece una variedad de productos de moda. Este repositorio incluye un archivo SQL con la estructura completa de la base de datos y datos de ejemplo para poner en marcha tu tienda.
 
-## Contenido del Repositorio
+¡Bienvenido a **Entelequia Store**! Este repositorio contiene el respaldo completo de la base de datos para nuestra tienda en línea de moda. Si estás interesado en la gestión de productos, clientes, pedidos y mucho más, ¡has llegado al lugar correcto!
 
-El directorio `SQL` contiene el archivo `Respaldo_BD_entelequia_store.sql`, que incluye:
+## 📁 Contenido del Repositorio
 
-- **Definición de Tablas**: Estructura de las tablas de la base de datos.
-- **Datos de Ejemplo**: Información de muestra para poblar las tablas y facilitar pruebas.
+El repositorio se organiza en las siguientes secciones:
 
-### Tablas Incluidas
+- **[`/SQL`](SQL/)**: Contiene el archivo SQL que define la estructura de la base de datos y proporciona datos de ejemplo para comenzar.
 
-- **`categorias`**: Información sobre las categorías de productos.
-- **`clientes`**: Datos de los clientes.
-- **`empleados`**: Información sobre los empleados.
-- **`pedidos`**: Registro de los pedidos realizados.
-- **`productos`**: Información de los productos.
-- **`detalles_pedido`**: Detalles de los productos en cada pedido.
-- **`devoluciones`**: Información sobre devoluciones de productos.
-- **`inventario`**: Estado del inventario para cada producto.
-- **`pagos`**: Registro de los pagos realizados.
-- **`proveedores`**: Información sobre los proveedores.
-- **`productos_proveedores`**: Relación entre productos y proveedores.
+  - **`Respaldo_BD_entelequia_store.sql`**: Script SQL con la definición de tablas y datos de ejemplo.
 
-## Cómo Usar el Archivo SQL
+## 🛠️ Cómo Usar el Archivo SQL
 
-1. **Descargar el Archivo**
-   - [Descargar el archivo SQL aquí](https://github.com/diegolozadev/BD_ENTELEQUIA_STORE/blob/main/SQL/Respaldo_BD_entelequia_store.sql).
+### 1. Descargar el Archivo
 
-2. **Importar a PostgreSQL**
-   - Guarda el archivo en tu sistema local.
-   - Abre la terminal o línea de comandos.
-   - Usa el siguiente comando para importar el archivo a tu base de datos PostgreSQL:
-     ```bash
-     psql -U <usuario> -d <nombre_base_datos> -f Respaldo_BD_entelequia_store.sql
-     ```
-   - Reemplaza `<usuario>` con tu nombre de usuario de PostgreSQL y `<nombre_base_datos>` con el nombre de tu base de datos.
+Obtén el archivo SQL desde el [directorio SQL del repositorio](https://github.com/diegolozadev/BD_ENTELEQUIA_STORE/tree/main/SQL).
 
-3. **Verificar la Importación**
-   - Accede a tu base de datos y revisa las tablas y datos utilizando herramientas de administración de PostgreSQL o consultas SQL.
+### 2. Importar a PostgreSQL
 
-## Estructura de las Tablas
+Sigue estos pasos para importar el archivo a tu base de datos PostgreSQL:
 
-Aquí tienes un resumen de la estructura de las tablas:
+1. **Guarda** el archivo SQL en tu sistema local.
+2. **Abre** tu terminal o línea de comandos.
+3. **Ejecuta** el siguiente comando para importar el archivo:
+   ```bash
+   psql -U <usuario> -d <nombre_base_datos> -f Respaldo_BD_entelequia_store.sql
+Asegúrate de reemplazar <usuario> con tu nombre de usuario de PostgreSQL y <nombre_base_datos> con el nombre de tu base de datos.
 
-- **`categorias`**: `id_categoria`, `nombre_categoria`, `descripcion`
-- **`clientes`**: `id_cliente`, `nombre`, `apellidos`, `email`, `telefono`, `direccion`, `ciudad`, `pais`, `codigo_postal`, `fecha_registro`
-- **`empleados`**: `id_empleado`, `nombre`, `apellidos`, `email`, `telefono`, `direccion`, `ciudad`, `pais`, `codigo_postal`, `puesto`, `salario`, `fecha_contratacion`
-- **`pedidos`**: `id_pedido`, `id_cliente`, `id_empleado`, `fecha_pedido`, `estado`, `total`
-- **`productos`**: `id_producto`, `nombre_producto`, `descripcion`, `precio`, `stock`, `id_categoria`, `fecha_agregado`
-- **`detalles_pedido`**: `id_detalle`, `id_pedido`, `id_producto`, `cantidad`, `precio_unitario`
-- **`devoluciones`**: `id_devolucion`, `id_pedido`, `id_producto`, `cantidad`, `fecha_devolucion`, `motivo`
-- **`inventario`**: `id_inventario`, `id_producto`, `cantidad_disponible`, `cantidad_reservada`, `ubicacion`
-- **`pagos`**: `id_pago`, `id_pedido`, `fecha_pago`, `monto`, `metodo_pago`
-- **`proveedores`**: `id_proveedor`, `nombre_proveedor`, `contacto`, `telefono`, `direccion`, `ciudad`, `pais`, `codigo_postal`, `email`
-- **`productos_proveedores`**: `id_producto`, `id_proveedor`
+3. Verificar la Importación
+Utiliza herramientas de administración de PostgreSQL o consultas SQL para verificar que las tablas y los datos se hayan importado correctamente.
 
-## Contribuciones
+📊 Estructura de la Base de Datos
+La base de datos incluye las siguientes tablas:
 
-¡Las contribuciones son bienvenidas! Si deseas contribuir a este proyecto, por favor sigue estos pasos:
+categorias: Categorías de productos.
+clientes: Datos de clientes.
+empleados: Información de empleados.
+pedidos: Registros de pedidos.
+productos: Información de productos.
+detalles_pedido: Detalles de los productos en cada pedido.
+devoluciones: Información sobre devoluciones.
+inventario: Estado del inventario.
+pagos: Registros de pagos.
+proveedores: Datos de proveedores.
+productos_proveedores: Relación entre productos y proveedores.
+Aquí tienes un pequeño resumen de las tablas:
 
-1. **Fork** el repositorio.
-2. **Crea** una rama (`git checkout -b feature/nueva-funcionalidad`).
-3. **Realiza** tus cambios.
-4. **Commit** tus cambios (`git commit -am 'Añadida nueva funcionalidad'`).
-5. **Push** a la rama (`git push origin feature/nueva-funcionalidad`).
-6. **Envía** un Pull Request.
+Tabla	Descripción
+categorias	Categorías de productos
+clientes	Información de los clientes
+empleados	Información de los empleados
+pedidos	Registros de pedidos
+productos	Información de productos
+detalles_pedido	Detalles de productos en pedidos
+devoluciones	Información sobre devoluciones
+inventario	Estado del inventario
+pagos	Registros de pagos
+proveedores	Información de los proveedores
+productos_proveedores	Relación entre productos y proveedores
+🤝 Contribuciones
+¡Queremos tu ayuda! Si deseas contribuir al proyecto:
 
-## Licencia
+Fork el repositorio.
+Crea una rama para tus cambios (git checkout -b feature/nueva-funcionalidad).
+Realiza tus cambios y commit (git commit -am 'Añadida nueva funcionalidad').
+Push a tu rama (git push origin feature/nueva-funcionalidad).
+Envía una Pull Request.
+📜 Licencia
+Este proyecto está bajo la Licencia MIT. ¡Siéntete libre de usarlo y adaptarlo según tus necesidades!
 
-Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
+📫 Contacto
+Para consultas o más información, contacta a Diego Lozano.
 
-## Contacto
-
-Si tienes alguna pregunta o necesitas más información, no dudes en contactar a [Diego Lozano](mailto:diegolozanodev@gmail.com).
-
----
-
-¡Gracias por visitar el repositorio de Entelequia Store! Esperamos que encuentres útil este respaldo de la base de datos para tus proyectos.
+Gracias por visitar el repositorio de Entelequia Store. ¡Esperamos que este respaldo de la base de datos te sea de gran utilidad en tu proyecto!
