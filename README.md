@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/f19aa5ba-7f1e-4333-968b-f3afece9183e)
+![image](https://github.com/user-attachments/assets/5a513137-f35d-4ab1-a560-4c19f2edbf49)
 
 # Respaldo de la Base de Datos Entelequia Store
 
