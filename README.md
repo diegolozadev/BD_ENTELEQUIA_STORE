@@ -47,7 +47,7 @@ Las contribuciones son bienvenidas. Si deseas mejorar este proyecto, sigue estos
 2.**Crea una Rama para tu Feature:**  
         `git checkout -b feature/mi-nueva-funcionalidad`  
 3.**Realiza tus Cambios y Haz un Commit:**  
-         `git commit -am 'Añadida nueva funcionalidad` 
+         `git commit -am 'Añadida nueva funcionalidad`  
 4.**Empuja tus Cambios:**  
          `git push origin feature/mi-nueva-funcionalidad`  
 5.**Crea un Pull Request**  
