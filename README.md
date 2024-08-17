@@ -30,7 +30,7 @@ Asegúrate de reemplazar <usuario> con tu nombre de usuario de PostgreSQL y <nom
 3. Verificar la Importación
 Utiliza herramientas de administración de PostgreSQL o consultas SQL para verificar que las tablas y los datos se hayan importado correctamente.
 
-📊 Estructura de la Base de Datos
+📊**Estructura de la Base de Datos**
 La base de datos incluye las siguientes tablas:
 
 ![image](https://github.com/user-attachments/assets/49b97ff8-4d9a-4a5d-8091-5775fc102116)
